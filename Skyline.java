@@ -17,7 +17,7 @@ public class Skyline extends JPanel{
         JFrame frame = new JFrame("Skyline");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new Skyline());
-        frame.pack();
+        frame.pack()
         frame.setVisible(true);
     }
     public Skyline(){
@@ -30,19 +30,19 @@ public class Skyline extends JPanel{
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
         RenderingHints.VALUE_ANTIALIAS_ON);
 
-        GradientPaint sunSet= new GradientPaint(0, 0, new Color(7,11,20), 0, 2*HEIGHT/3, new Color(28, 44, 69));
+        GradientPaint sunSet= new GradientPaint( new Color(7,11,20), 0, 2*HEIGHT/3, new Color(28, 44, 69));
         GradientPaint sunSet2= new GradientPaint(0, 2*HEIGHT/3, new Color(28,44,69), 0, HEIGHT, new Color(223, 169, 107));
         g.setPaint(sunSet);
         g.fill(new Rectangle2D.Double(0, 0, WIDTH, 2*HEIGHT/3));
         g.setPaint(sunSet2);
-        g.fill(new Rectangle2D.Double(0,2*HEIGHT/3,WIDTH,HEIGHT/3));
+        g.fill(new Rectangle2D.Double(0,2*HEIGHT/3,WIDTH,HEIGHT/3))
 
         Random rand = new Random();
         //Your code here
         //stars (cluster)
         g.setColor(Color.yellow);
         int centerx = WIDTH/2 -100 + rand.nextInt(150);
-        int centery = HEIGHT/3 -50 + rand.nextInt(100);
+        int centery = HEIGHT/3 -50 + rand.next00);
         for(int i =0; i<100;i++){
           int clusterx = centerx + (int) (20*rand.nextGaussian());
           int clustery = centery + (int) (20*rand.nextGaussian());
